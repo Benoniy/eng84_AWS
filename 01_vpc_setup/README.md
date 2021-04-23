@@ -60,3 +60,11 @@
 
 ![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/subnet-2.jpg)  
 
+
+### Private:
+
+
+1. This repeat the steps above but make certain to use a unique value for `blue`.
+
+
+## Step 4:
