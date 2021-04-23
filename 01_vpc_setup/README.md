@@ -128,7 +128,84 @@
 ## Step 5 Instance Creation:  
 ### App:  
 
-1. 
+1. First we will start by launching a new instance.  
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/ec2-1.jpg)  
+
+
+2. We must use Ubuntu 16.04, you can use the search bar to find it easily.  
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/ec2-2.jpg)  
+
+
+3. We will use a free t2 micro.  
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/ec2-3.jpg)  
+
+
+4. This is where the important stuff starts.  
+   * `red` - This is your VPC selection, it must be set to your VPC.  
+   * `blue` - This is your subnet selection, in this case it should be set to your public subnet.
+   * `green` - This must be enabled so that your app has a public IPV4.  
+   
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/ec2-4.jpg)  
+
+
+5. The storage page should be left on all default settings.  
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/ec2-5.jpg)  
+
+
+6. On the tags page you MUST add a Name tag with a sensible name.  
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/ec2-6.jpg)  
+
+
+7. This is the second really important part.  
+   * `red` - This should be set to a name for your security group.  
+   * `blue` - This is your ssh connection you must change the source to My IP  
+   * `green` - This rule adds http access to the app, type should be http source should be set to 0.0.0.0/0  
+   
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/ec2-7.jpg)  
+
+
+8. On the Final page you can now click launch, you will be asked to select a key pair. Choose the existing  
+   DevOpsStudent key pair and then confirm.  
+   
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/ec2-8.jpg)  
+
+
+9. Congratulations you App should now be setup!  
+
+
+### DB:  
+
+1. Repeat steps 1, 2 and 3 exactly the same as app.  
+
+
+2. Now repeat step 4 but remember that in this case your subnet should be set to your private one.  
+
+
+3. Next repeat steps 5 and 6 exactly the same as app.  
+
+
+4. Now you must repeat step 7 but your rules should instead look like this.  
+   * `red` - this allows the app to connect to db locally, the source should be set to the IPV4 of your public subnet.  
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/ec2-db.jpg)  
+
+
+5. Now simply repeat step 8 and 9.
+
 
 
 
