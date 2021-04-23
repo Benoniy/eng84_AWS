@@ -38,3 +38,6 @@
 
 
 7. When you are done you now have to change all of these settings back so that your db is inaccessible again.  
+
+
+8. Now restart your app and db instance.
