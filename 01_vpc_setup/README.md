@@ -14,4 +14,31 @@
     * We will use these numbers again later on so don't forget them  
     
 
-![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/vpc-2.jpg)
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/vpc-2.jpg)  
+
+
+
+## Step 2: Internet gateway assignment  
+
+1. Navigate to the Internet Gateway section and create one. This has to be done in order to connect your vpc to the  
+   internet!  
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/ig-1.jpg)  
+
+
+2. It's important to again select an easily identifiable name.  
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/ig-2.jpg)  
+
+
+3. Once you have created it right-click on it in the list and attach it to your vpc. Be sure that you choose your  
+   VPC in the dropdown options!  
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/ig-3.jpg)  
+
+
+
+## Step 3:
