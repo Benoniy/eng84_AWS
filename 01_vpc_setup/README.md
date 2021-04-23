@@ -41,4 +41,22 @@
 
 
 
-## Step 3:
+## Step 3 Create your subnets:  
+### Public subnet:
+
+
+1. First navigate to the subnet page and click the "create subnet" button.  
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/subnet-1.jpg)  
+
+
+2. Next we have to again pick a suitable name and note a few important items.  
+   * `red` - This is the IPV4 CIDR for the vpc that we made earlier.
+   * `blue` - This is the IPV4 CIDR for this current subnet, the first two numbers of this must be the same as in  
+     VPC IPV4. The third number must be unique, it can't be the same as another subnet you have created. The fourth  
+     number must be 0. Finally we must follow that with /24.
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/subnet-2.jpg)  
+
