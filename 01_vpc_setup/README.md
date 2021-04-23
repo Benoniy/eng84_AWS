@@ -201,7 +201,7 @@
    * `red` - this allows the app to connect to db locally, the source should be set to the IPV4 of your public subnet.  
 
 
-![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/ec2-db.jpg)  
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/ec2-db-rules.jpg)  
 
 
 5. Now simply repeat step 8 and 9.
