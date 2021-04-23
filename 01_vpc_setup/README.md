@@ -67,4 +67,66 @@
 1. This repeat the steps above but make certain to use a unique value for `blue`.
 
 
-## Step 4:
+## Step 4 Managing the route tables:  
+### Public:
+
+1. This a bit complicated, the first thing we have to do is go to the route table page and identify the one that is 
+   attached to our vpc. We can do this by going through the unnamed ones and seeing if they are attached to our VPC.
+   
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/route-table-1.jpg)  
+
+
+2. I strongly suggest you rename this by clicking on the empty name field to `eng84_name_public_rt`.  
+
+
+3. Next you're going to want to give this subnet internet access by going to routes and adding one.  
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/route-table-2.jpg)  
+
+
+4. We will connect 0.0.0.0/0 to our internet gateway, it should be the only option available.  
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/route-table-3.jpg)  
+
+
+5. Now we will go back to the page we were on before and associate our public subnet with this route table, start by  
+   clicking on subnet associations and click on edit subnet associations.  
+   
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/route-table-4.jpg)  
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/route-table-5.jpg)  
+
+
+### Private:  
+
+1. Now we want to create a new route table for out DB with no access to the internet. We will start by clicking  
+   create route table.  
+   
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/route-table-6.jpg)  
+
+
+2. Make certain that you attach it to your vpc.  
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/route-table-7.jpg)  
+
+
+3. We will now associate our private subnet in the same way as we did before.  
+
+
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/route-table-8.jpg)  
+![placeholder](https://github.com/Benoniy/eng84_AWS/blob/main/01_vpc_setup/images/route-table-9.jpg)  
+
+
+4. Congrats, your route tables are now setup.  
+
+
+## Step 5 Instance Creation: 
+
+
+
+
