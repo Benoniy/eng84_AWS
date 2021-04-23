@@ -2,7 +2,7 @@
 
 ## Connecting to the app:  
 1. Connecting to the app is simple, it works in the exact same way that you are used to with only one minor  
-   différance. We will be using the public ipv4 instead of a DNS link like usual. First select your app instance and  
+   difference. We will be using the public ipv4 instead of a DNS link like usual. First select your app instance and  
    click connect.  
    
 
