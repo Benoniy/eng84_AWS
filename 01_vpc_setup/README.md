@@ -207,5 +207,7 @@
 5. Now simply repeat step 8 and 9.
 
 
+## Step 6 Test if it worked:  
 
+1. See my [guide]() on connecting to these instances.
 
