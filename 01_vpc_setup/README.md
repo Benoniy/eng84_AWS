@@ -209,5 +209,5 @@
 
 ## Step 6 Test if it worked:  
 
-1. See my [guide]() on connecting to these instances.
+1. See my [guide](https://github.com/Benoniy/eng84_AWS/tree/main/02_connecting) on connecting to these instances.
 
