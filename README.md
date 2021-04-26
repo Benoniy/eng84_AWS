@@ -21,3 +21,22 @@
 3. Amazon is so large that Data Backup and Security is a sure thing  
 
 
+## Commands: 
+
+* Transfer files to the instance:  
+  ```
+  scp -ri ~/.ssh/.pem /file_to_transfer ubuntu@<ip>:~/location
+  ```
+
+
+* Fix DOS conversion error:
+  ```
+  wget "http://ftp.de.debian.org/debian/pool/main/d/dos2unix/dos2unix_6.0.4-1_amd64.deb"
+  sudo dpkg -i dos2unix_6.0.4-1_amd64.deb
+  ```
+
+
+* Proxy SSH into our private network:  
+  ```
+  ssh -i ~/.ssh/local.pem -o ProxyCommand="ssh -i ~/.ssh/local.pem -W %h:%p ubuntu@app_ip" ubuntu@db_private_ip
+  ```
