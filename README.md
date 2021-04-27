@@ -21,6 +21,41 @@
 3. Amazon is so large that Data Backup and Security is a sure thing  
 
 
+## What is a VPC:  
+* Virtual Private Cloud defines a virtual network  
+* Enables you to launch AWS instances resembling a traditional data center  
+* Supports multiple subnets
+
+
+## What are Subnets?  
+* Sub-Networks make networks more efficient.  
+* Defines a range of IP's  
+* Can have specific rules based on route tables
+
+
+## What are route tables?  
+* Define the routes to and from one or more subnets.  
+* Used for security
+* Connect to the internet or to other subnets
+
+
+## What is an internet gateway?  
+* Connection point to the internet.  
+* You attach to your VPC.
+
+
+## What is an NACL?
+* Basically functions as a port based firewall for the whole VPC.  
+* Can be used for the whole VPC or a group of subnets.  
+* Stateless  
+
+
+## What is a Security Group?  
+* Defines port based firewall rules.  
+* Can be attached to one or more instances specifically.  
+* Stateful.  
+
+
 ## Commands: 
 
 * Transfer files to the instance:  
