@@ -138,7 +138,7 @@ elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then
 fi
 
 unset env
-```  
+```
 * git config: 
 ```
 Host bastion
@@ -155,3 +155,12 @@ Host bastion
 
 ![alt_text](https://github.com/Benoniy/eng84_AWS/blob/main/images/rules.jpg)
 
+
+
+# What is S3?
+* Simple Storage Service
+* `aws configure` - setup
+* `aws s3 mb s3://name` - make bucket
+* `aws s3 rb s3://name` - delete bucket
+* `aws s3 sync s3://name README.md` - Download
+* `aws s3 linux_cmd s3://name/path` - This will mostly work
