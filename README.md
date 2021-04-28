@@ -153,5 +153,5 @@ Host bastion
 
 ![alt_text](https://github.com/Benoniy/eng84_AWS/blob/main/images/diagram.png)
 
-![alt_text](https://github.com/Benoniy/eng84_AWS/blob/main/images/rules.png)
+![alt_text](https://github.com/Benoniy/eng84_AWS/blob/main/images/rules.jpg)
 
