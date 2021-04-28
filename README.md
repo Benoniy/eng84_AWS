@@ -57,6 +57,7 @@
 
 
 ## Linux:  
+* `man cmd` - Manual of the command
 * `apt (install | remove)` - Package manager  
 * `mkdir` - Make folder  
 * `ls (-a)` - list files, -a shows all files  
