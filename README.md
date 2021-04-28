@@ -56,7 +56,20 @@
 * Stateful.  
 
 
-## Commands: 
+## Linux:  
+* `apt install` - Package manager
+* `mkdir` - Make folder  
+* `ls` - list files  
+* `nano` - text editor  
+* `touch` - makefile  
+* `cd` .. - up a dir  
+* `pwd`  - print working directory
+* `mv` - move also used to rename  
+* `cp` - copy  
+* `rm` - remove  
+* `ll` - check permissions  
+* `chmod` - change permissions
+* `top` - task manager
 
 * Transfer files to the instance:  
   ```
@@ -75,3 +88,37 @@
   ```
   ssh -i ~/.ssh/local.pem -o ProxyCommand="ssh -i ~/.ssh/local.pem -W %h:%p ubuntu@app_ip" ubuntu@db_private_ip
   ```
+  
+
+## What is a bastion server?  
+* Entry point into a VPC  
+* Uses SSH agent forwarding  
+* git bash ~/.bashrc (auto-sets parameters on Windows):  
+```
+env=~/.ssh/agent.env
+
+agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }
+
+agent_start () {
+    (umask 077; ssh-agent >| "$env")
+    . "$env" >| /dev/null ; }
+
+agent_load_env
+
+if [ ! "$SSH_AUTH_SOCK" ] || [ $agent_run_state = 2 ]; then
+    agent_start
+    ssh-add ~/.ssh/DevOpsStudent.pem
+elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then
+    ssh-add ~/.ssh/DevOpsStudent.pem
+fi
+
+unset env
+```  
+* git config: 
+```
+Host bastion
+  Hostname public_ip
+  User ubuntu
+  IdentityFile ~/.ssh/.pem_file
+  ForwardAgent yes
+```
