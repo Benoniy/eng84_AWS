@@ -147,3 +147,11 @@ Host bastion
   IdentityFile ~/.ssh/.pem_file
   ForwardAgent yes
 ```
+
+
+## Diagrams:  
+
+![alt_text](https://github.com/Benoniy/eng84_AWS/blob/main/images/diagram.png)
+
+![alt_text](https://github.com/Benoniy/eng84_AWS/blob/main/images/rules.png)
+
