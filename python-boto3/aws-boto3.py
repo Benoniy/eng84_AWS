@@ -1,10 +1,8 @@
 import boto3
 
 file = open("access-token", "r")
-ak = file.readline().strip("\n")
-sak = file.readline().strip("\n")
 region = "eu-west-1"
-s3 = boto3.client('s3', aws_access_key_id=ak, aws_secret_access_key=sak, region_name=region)
+s3 = boto3.client('s3', region_name=region)
 bucket = "eng84-ben-test-bucket"
 
 
